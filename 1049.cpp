@@ -1,17 +1,30 @@
 #include<iostream>
-#include<iomanip>
 using namespace std;
-
 int main(){
-    int n;
-    float sum = 0, div = 0;
-    while(1){
-        cin>>n;
-        if(n<0) break;
-            sum +=n;
-            div+=1;
-        }
- 
-        cout<<fixed<<setprecision(2)<<sum/div<<endl;
-        return 0;
+   char a[13];
+   char b[13];
+   char c[13];
+   cin>>a>>b>>c;
+   if(a[0]=='v' && b[0]=='a' && c[0]=='c'){
+    cout<<"aguia"<<endl;
+   }
+    if(a[0]=='v' && b[0]=='a' && c[0]=='o'){
+    cout<<"pomba"<<endl;
+   }
+    if(a[0]=='v' && b[0]=='m' && c[0]=='o'){
+    cout<<"homem"<<endl;
+   }
+    if(a[0]=='v' && b[0]=='m' && c[0]=='h'){
+    cout<<"vaca"<<endl;
+   }
+    if(a[0]=='i' && b[0]=='i' && c[2]=='m'){
+    cout<<"pulga"<<endl;
+   } if(a[0]=='i' && b[0]=='i' && c[2]=='r'){
+    cout<<"lagarta"<<endl;
+   } if(a[0]=='i' && b[0]=='a' && c[0]=='h'){
+    cout<<"sanguessuga"<<endl;
+   } if(a[0]=='i' && b[0]=='a' && c[0]=='o'){
+    cout<<"minhoca"<<endl;
+   }
+    return 0;
 }

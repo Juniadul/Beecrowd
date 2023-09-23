@@ -1,27 +1,13 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    int a,b,c,d;
-    cin>>a>>b>>c>>d;
-    
-    return 0;
-}
-#include<iostream>
-using namespace std;
-
-int main(){
-    int x,y;
-    cin>>x>>y;
-    if(x>y){
-        cout<<"O JOGO DUROU "<<24-(x-y)<<" HORA(S)"<<endl;
-    }
-    if(x==y){
-        cout<<"O JOGO DUROU "<<24-(x-y)<<" HORA(S)"<<endl;
-    }
-    if(x<y){
-        cout<<"O JOGO DUROU "<<(y-x)<<" HORA(S)"<<endl;
-    }
-    
+int main()
+{
+    int a, b, c, d;
+    int dif;
+    scanf("%d %d %d %d", &a, &c, &b, &d);
+    dif = ((b*60)+d) - ((a*60)+c);
+    if(dif<=0) dif += 24*60;
+    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", dif/60, dif%60);
     return 0;
 }
