@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n,i,j;
+    int n,i;
     cin>>n;
     for( i = 0; i<n*4;){
 
